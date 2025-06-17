@@ -3,43 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
     <title>Registration</title>
   </head>
   <body>
-    <header style="text-align: center">
-      <h1>Greenshop</h1>
+    <header>
+      <h1>GREENSHOP</h1>
       <h3>Registration</h3>
       <p>Enter your email and password to register</p>
     </header>
-
-    <form action="#" style="text-align: center">
-      <label for="name">Name</label>
-      <input id="name" type="text" placeholder="Enter your username" /> <br />
-
-      <label for="email">Email</label>
-      <input id="email" type="email" placeholder="Enter your email" /> <br />
-
-      <label for="password">Password</label>
-      <input id="password" type="password" placeholder="Enter your password" />
-      <br />
-
-      <label for="Confirm-password">Password</label>
-      <input
-        id="Confirm-password"
-        type="password"
-        placeholder="Confirm your password"
-      />
-      <br />
-
-      <button type="submit" style="background-color: aquamarine">
-        Register
-      </button>
+    <div class="container">
+      <h2>Регистрация</h2>
+      <form id="registerForm">
+        <input type="text" id="username" placeholder="Username" required />
+        <br />
+        <input type="email" id="email" placeholder="Email" required /> <br />
+        <input type="password" id="password" placeholder="Password" required />
+        <br />
+        <input
+          type="password"
+          id="confirm"
+          placeholder="Confirm Password"
+          required
+        />
+        <br />
+        <button type="submit">Registration</button>
+      </form>
       <br />
 
       <p>Or register with</p>
 
-      <a href="#">Continue with Google</a> <br />
-      <a href="#">Continue with Facebook</a>
-    </form>
+      <a href="https://www.google.com/?client=safari">
+        <img src="images/google 1.png" />Continue with Google
+      </a>
+      <a href="https://www.facebook.com"
+        ><img src="images/facebook 1.png" />Continue with Facebook</a
+      >
+    </div>
   </body>
 </html>
