@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "style"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Green_project"
+	}
+}
