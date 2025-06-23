@@ -1,6 +1,4 @@
-*{
-    box-sizing: border-box;
-}
+
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -11,7 +9,7 @@ body{
 }
 .header{
     font-size: 0;
-    margin: 25px 15px 5px 25px;
+    padding: 25px 15px 5px 25px;
 }
 .header-logo{
     width: 150px;
@@ -48,6 +46,9 @@ body{
     text-decoration: none;
     color: #3D3D3D
 }
+.header-menu a.active{
+    border-bottom: 2px solid #46A358;
+}
 .header-menu a:hover{
     color: #46A358;
 }
@@ -74,11 +75,8 @@ body{
     display: inline-block;
     vertical-align: middle;
 }
-img{
-    max-width: 100%;
-    height: auto;
-}
-p,
+
+.visual p,
 h1,
 .visual-text a
 {
