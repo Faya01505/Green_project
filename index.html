@@ -4,16 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/style-menu.css" />
   </head>
   <body>
     <header class="header">
-      <strong class="header-logo"> <img src="images/Logo.png" /></strong>
+      <strong class="header-logo"> <img src="images /Logo.png" /></strong>
 
       <nav class="header-menu">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="#" class="active">Home</a></li>
           <li><a href="#">Shop</a></li>
           <li><a href="#">Plant Care</a></li>
           <li><a href="#">Blogs</a></li>
@@ -35,9 +42,136 @@
           <a href="#" class="button-link">Shop Now</a>
         </div>
         <div class="visual-img">
-          <img src="images/горшок.png" />
+          <img src="images /горшок.png" />
         </div>
       </section>
     </main>
+    <div class="main-layout">
+      <aside class="aside-menu">
+        <h4>Categories</h4>
+        <ul class="aside-list">
+          <li><a href="#" class="active">House Plants</a></li>
+          <li><a href="#">Potter Plants</a></li>
+          <li><a href="#">Seeds</a></li>
+          <li><a href="#">Small Plants</a></li>
+          <li><a href="#">Big Plants</a></li>
+          <li><a href="#">Succulents</a></li>
+          <li><a href="#">Terrariums</a></li>
+          <li><a href="#">Gardening</a></li>
+          <li><a href="#">Accessories</a></li>
+        </ul>
+        <div class="aside-img">
+          <a href=""><img src="images /Sale Banner.svg" /></a>
+        </div>
+      </aside>
+
+      <div class="content">
+        <div class="content-holder">
+          <ul class="filter-menu">
+            <li><a href="#" class="active">All Plants</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Sale</a></li>
+          </ul>
+
+          <div class="sort-menu">
+            Short by:
+            <select>
+              <option>Default sorting</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="products-wrapper">
+          <div class="list-product">
+            <div class="item">
+              <img src="images /p1.png" alt="" />
+
+              <strong class="product-name">Barberton Daisy</strong>
+              <span class="product-price">119$</span>
+            </div>
+          </div>
+
+          <div class="list-product">
+            <div class="item">
+              <img src="images /p2.png" alt="" />
+
+              <strong class="product-name">Angel Wing Begonia</strong>
+              <span class="product-price">169$</span>
+            </div>
+          </div>
+
+          <div class="list-product">
+            <div class="item">
+              <img src="images /p3.png" alt="" />
+
+              <strong class="product-name">African Violet</strong>
+              <span class="product-price">199.00$</span>
+            </div>
+          </div>
+
+          <div class="list-product">
+            <div class="item">
+              <img src="images /p4.png" alt="" />
+
+              <strong class="product-name">Beach Spider Lily</strong>
+              <span class="product-price">129.00$</span>
+            </div>
+          </div>
+
+          <div class="list-product">
+            <div class="item">
+              <img src="images /p5.png" alt="" />
+
+              <strong class="product-name">Blushing Bromeliad</strong>
+              <span class="product-price">139.00$</span>
+            </div>
+          </div>
+
+          <div class="list-product">
+            <div class="item">
+              <img src="images /p6.png" alt="" />
+
+              <strong class="product-name">Aluminum Plant</strong>
+              <span class="product-price">179.00$</span>
+            </div>
+          </div>
+
+          <div class="list-product">
+            <div class="item">
+              <img src="images /p7.png" alt="" />
+
+              <strong class="product-name">Bird's Nest Fern</strong>
+              <span class="product-price">99.00$</span>
+            </div>
+          </div>
+
+          <div class="list-product">
+            <div class="item">
+              <img src="images /p8.png" alt="" />
+
+              <strong class="product-name">Broadleaf Lady Palm</strong>
+              <span class="product-price">59.00$</span>
+            </div>
+          </div>
+
+          <div class="list-product">
+            <div class="item">
+              <img src="images /p9.png" alt="" />
+
+              <strong class="product-name">Chinese Evergreen</strong>
+              <span class="product-price">39.00$</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination">
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+    </div>
   </body>
 </html>
