@@ -321,31 +321,33 @@ h3{
     background: #fff;
 }
 
+.card-container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 .product{
     display: flex;
     justify-content: space-around;
     gap: 30px;
     padding: 60px 40px;
-    background-color: #FBFBFB;
-    
-    
+    background-color: #ffffff;
 }
+
 .card{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
+    text-align: right;
     padding: 20px;
-    width: 700px;
-    border-radius: 10px;
+    width: 700%;
     gap: 30px;
+    background-color: #FBFBFB;
 
 }
 .card img{
-    
     height: auto;
     margin-bottom: 20px;
     flex-shrink: 0;
+    margin-top: -70px;
 }
 .card_text{
     display: flex;
@@ -360,6 +362,7 @@ h3{
     font-size: 18px;
     font-weight: 900;
     color: #3D3D3D;
+    text-transform: uppercase;
 }
 .card_text p{
     font-size: 14px;
@@ -377,7 +380,7 @@ h3{
 .holder .title h2{
     font-size: 30px;
     font-weight: 700;
-    line-height: 16px;
+    line-height: 40px;
     color: #3D3D3D;
 }
 .holder .title p{
@@ -389,14 +392,14 @@ h3{
 }
 .post_holder{
     display: flex;
-    flex-direction: row;
-    
     justify-content: center;
     gap: 40px;
+
 }
 .item_holder{
     display:flex;
     flex-direction: column;
+    
     
 }
 .text_holder{
@@ -415,13 +418,16 @@ h3{
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
+    padding-left: 10px;
 }
-.text_holder h2{
+.text_holder h4{
     color: #3D3D3D;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     margin-top: 10px;
+    max-width: 200px;
+    padding-left: 10px;
 }
 .text_holder p{
     color: #727272;
@@ -429,6 +435,7 @@ h3{
     font-size: 14px;
     line-height: 22px;
     margin-top: 10px;
+    padding-left: 10px;
 }
 
 .item_holder a{
@@ -441,10 +448,6 @@ h3{
     margin-top: 10px;
 }
 
-.item_holder a.active{
-    color: #46A358;
-}
-
 .item_holder a:hover{
     color: #46A358;
 }
@@ -452,6 +455,7 @@ h3{
     display: inline-flex;
     align-items: center;
     gap: 6px;
+    padding-left: 10px;
 }
 .item_holder .arrow{
     width: 16px;
