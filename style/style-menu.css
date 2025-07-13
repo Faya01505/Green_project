@@ -242,7 +242,11 @@ h3{
     border-bottom-color: #7cb342;
 }
 
-
+.container-wrapper{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 .products-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -338,7 +342,7 @@ h3{
     display: flex;
     text-align: right;
     padding: 20px;
-    width: 700%;
+    width: 350%;
     gap: 30px;
     background-color: #FBFBFB;
 
@@ -352,11 +356,9 @@ h3{
 .card_text{
     display: flex;
     flex-direction: column; 
-    align-items: flex-start;
+    align-items: flex-end;
     gap: 10px;
-     
     margin-left: 0px;
-    text-align: left;
 }
 .card_text h2{
     font-size: 18px;
@@ -412,9 +414,9 @@ h3{
     height: 195.1px;
     width: 268px;
 }
-.text_holder .link{
-    margin-top: 10px;
+.text_holder .info{
     color: #46A358;
+    margin-top: 10px;
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
