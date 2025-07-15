@@ -168,16 +168,15 @@ h3{
     box-sizing: border-box;
     padding: 20px;
     float: left;
+    
 }
+.aside-list li a:hover {
+    color: #46A358;
+}
+
 .aside-img{
     float: left;
     margin: 0%;
-
-
-    
-    
-
-    
 }
 .aside-img img{
     width: 100%;
@@ -206,7 +205,7 @@ h3{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
-    padding: 20px;
+    
    
 }
 .filter-menu {
@@ -218,6 +217,9 @@ h3{
 }
 .filter-menu li{
     margin: 0;
+}
+.filter-menu li a:hover{
+    color: #46A358;
 }
 .sort-menu{
     display: flex;
@@ -240,7 +242,11 @@ h3{
     border-bottom-color: #7cb342;
 }
 
-
+.container-wrapper{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 .products-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -251,13 +257,10 @@ h3{
 }
 
 .list-product {
-    background: white;
-    border-radius: 8px;
+    background: #FBFBFB;
     padding: 8px;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     width: 258px;
-    max-height: 350%;
     display: flex;
    
 
@@ -297,6 +300,7 @@ h3{
     gap: 10px;
     margin-top: 40px;
     margin-left: 1120px;
+    justify-content: flex-end;
 }
 .pagination a{
     text-decoration: none;
@@ -316,4 +320,186 @@ h3{
 .pagination a:hover{
     color: #46A358;
     background: #fff;
+}
+
+.card-container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.product{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 60px 40px;
+    background-color: #ffffff;
+}
+
+.card{
+    display: flex;
+    text-align: right;
+    padding: 20px;
+    width: 350%;
+    gap: 30px;
+    background-color: #FBFBFB;
+
+}
+.card img{
+    height: auto;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+    margin-top: -70px;
+}
+.card_text{
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;
+    gap: 10px;
+    margin-left: 0px;
+}
+.card_text h2{
+    font-size: 18px;
+    font-weight: 900;
+    color: #3D3D3D;
+    text-transform: uppercase;
+}
+.card_text p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #727272;
+    
+}
+.holder{
+    margin-top: 50px;
+}
+.holder .title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.holder .title h2{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #3D3D3D;
+}
+.holder .title p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #727272;
+    margin-top: 20px;
+}
+.post_holder{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+.item_holder{
+    display:flex;
+    flex-direction: column;
+    
+    
+}
+.text_holder{
+    display: flex;
+    flex-direction: column;
+    background-color: #FBFBFB;
+
+}
+.item_holder img{
+    height: 195.1px;
+    width: 268px;
+}
+.text_holder .info{
+    color: #46A358;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.text_holder h4{
+    color: #3D3D3D;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 10px;
+    max-width: 200px;
+    padding-left: 10px;
+}
+.text_holder p{
+    color: #727272;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.item_holder a{
+    text-decoration: none;
+    display: flex;
+    color: #3D3D3D;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-top: 10px;
+}
+
+.item_holder a:hover{
+    color: #46A358;
+}
+.item_holder a{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding-left: 10px;
+}
+.item_holder .arrow{
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+.item {
+    position: relative;
+}
+.cards-link{
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    right: 0;
+    justify-content: center;
+    display: none;
+}
+.cards-link li{
+    margin: 0 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 1);
+}
+.list-product{
+    border-top: 1px solid #FBFBFB;
+}
+.list-product:hover {
+    border-top: 1px solid #46A358;
+}
+.list-product:hover .cards-link{
+    display: flex;
+}
+
+.sale{
+    padding: 0 12px;
+    height: 29px;
+    background-color: #46A358;
+    color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 29px;
+}
+.item{
+    position: relative;
 }
