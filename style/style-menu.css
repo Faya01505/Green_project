@@ -78,17 +78,14 @@ body {
     text-align: center;
     vertical-align: middle;
 }
-.header-menu li{ 
-    display: inline-block;
-    margin: 5px 15px 5px 15px;
-}
+
 .header-menu a{
     text-decoration: none;
     color: #3D3D3D
 }
-.header-menu a.active{
+/* .header-menu a.active{
     border-bottom: 2px solid #46A358;
-}
+} */
 .header-menu a:hover{
     color: #46A358;
 }
@@ -502,4 +499,95 @@ h3{
 }
 .item{
     position: relative;
+}
+
+.nav-list > li:not(.active)hover > a{
+    color: #46A358;
+}
+.nav-list > li:hover{
+color: #46A358;
+}
+.nav-list .active::after,
+.nav-list > li:hover:after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    display: inline-block;
+    background: #46A358;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+}
+
+.nav-list a:hover{
+    background: #46A358;
+    color: #fff;
+
+}
+
+.nav-list > li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+
+.nav-list > li:hover .sub-menu {
+    display: block;
+}
+ 
+.sub-menu{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 188px;
+    margin-left: -50px;
+    padding-top: 35px;
+    
+}
+.sub-menu li{
+    background: #EDF6EE;
+}
+.sub-menu li:has(ul) > a::after{
+    content: '';
+    width: 6px;
+    height: 6px;
+    border: 1px solid #000;
+    border-width: 2px 2px 0 0;
+    display: inline-block;
+    position: absolute;
+    right: 13px;
+    top: 11px;
+    transform: rotate(45deg);
+
+}
+.sub-menu li:hover > a{
+    background: #1A712A;
+    color: #fff;
+}
+.sub-menu li:hover > a:after{
+    border-width: 0 0 2px 2px;
+    border-color: #fff;
+}
+.sub-menu li:hover .second-menu{
+    display: block;
+}
+
+.sub-menu a {
+    display: block;
+    padding: 5px;
+    position: relative;
+    
+}
+.second-menu {
+    width: 188px;
+    position: absolute;
+    left: 100%;
+    top: 35px;
+    background: #EDF6EE;
+    display: none;
+
 }
