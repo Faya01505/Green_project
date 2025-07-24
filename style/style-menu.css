@@ -521,8 +521,7 @@ color: #46A358;
 }
 
 .nav-list a:hover{
-    background: #46A358;
-    color: #fff;
+    font-weight: bold;
 
 }
 
@@ -546,6 +545,7 @@ color: #46A358;
     width: 188px;
     margin-left: -50px;
     padding-top: 35px;
+    text-align: left;
     
 }
 .sub-menu li{
