@@ -43,6 +43,7 @@ body {
   
 }
 
+
 .header-logo,
 .header-menu,
 .header-login{
@@ -67,10 +68,6 @@ body {
     text-decoration: none;
     border-radius: 6px;
     border: 3px solid #46A358;
-}
-.header-login:hover{
-    color: #46A358;
-    background: #fff;
 }
 .header-menu{
     width: calc(100% - 250px);
@@ -225,6 +222,18 @@ h3{
     font-size: 16px;
     color: #333;
 }
+.sort-menu select{
+    padding: 8px 12px;
+        border: 3px solid #46A358;
+        border-radius: 4px;
+        background-color: #fff;
+        font-size: 14px;
+        color: #000000;
+        cursor: pointer;
+        outline: none;
+        transition: border-color 0.2s, box-shadow 0.2s;
+}
+
 .filter-menu a {
     text-decoration: none;
     color: #666;
@@ -468,6 +477,7 @@ h3{
     right: 0;
     justify-content: center;
     display: none;
+    
 }
 .cards-link li{
     margin: 0 10px;
@@ -475,6 +485,9 @@ h3{
     height: 35px;
     border-radius: 4px;
     color: rgba(255, 255, 255, 1);
+}
+.cards-link li:hover svg {
+    fill: #46A358;
 }
 .list-product{
     border-top: 1px solid #FBFBFB;
@@ -715,6 +728,13 @@ color: #46A358;
     gap: 10px;
     font-size: 14px;
 }
+.footer-icon{
+    fill:#46A358;
+}
+.footer-icon:hover,
+.footer-icon:focus{
+    fill: rgb(26, 116, 83);
+}
 
 .footer-item a {
     text-decoration: none;
@@ -728,7 +748,7 @@ color: #46A358;
 
 .footer-menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 30px;
     margin: 30px;
     
@@ -741,6 +761,7 @@ color: #46A358;
     color: #292929;
     font-size: 16px;
 }
+
 
 .footer-menu-text ul {
     list-style: none;
@@ -769,7 +790,9 @@ color: #46A358;
     flex-direction: column;
     gap: 10px;
 }
-
+.footer-social{
+    display: flex;
+}
 
 .copyright {
     padding: 15px 0;
@@ -781,3 +804,25 @@ color: #46A358;
     margin-top: 20px;
 }
 
+.footer-social li{
+    fill: #46A35899 ;
+    margin-right: 10px;
+    font-size: 20px;
+    color: rgba(70, 163, 88, 0.6);
+    border: 1px solid rgba(70, 163, 88, 0.6);
+    border-radius: 4px;
+    padding: 8px;
+    transition: all 0.3s ease;
+}
+.footer-social li:hover{
+    border-color: #145436;
+}
+.footer-social a{
+    color: inherit;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.footer-social li:hover svg{
+     fill: #145436;     
+}
