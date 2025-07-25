@@ -65,6 +65,10 @@ form button {
     cursor: pointer;
     margin-top: 10px;
 }
+.form button:hover{
+    color: #46A358;
+    background: #fff;
+}
 
 p {
     text-align: center;

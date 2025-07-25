@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Харрат</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,14 +19,37 @@
       <strong class="header-logo"> <img src="images/logo.png" /></strong>
 
       <nav class="header-menu">
-        <ul>
-          <li><a href="#" class="active">Home</a></li>
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
           <li><a href="#">Shop</a></li>
-          <li><a href="#">Plant Care</a></li>
+          <li>
+            <a href="#" class="active">Plant Care</a>
+            <ul class="sub-menu">
+              <li><a href="">Drainage</a></li>
+              <li><a href="">Fungicides</a></li>
+              <li><a href="">Fertilizer</a></li>
+              <li>
+                <a href="">Priming</a>
+                <ul class="second-menu">
+                  
+                    <li><a href="">Universal</a></li>
+                    <li><a href="">For Ficus</a></li>
+                    <li><a href="">For Cacti</a></li>
+                    <li><a href="">For Citrus</a></li>
+                    <li><a href="">For those in bloom</a></li>
+                    <li><a href="">For Orchids</a></li>
+                  
+                </ul>
+              </li>
+            </ul>
+          </li>
           <li><a href="#">Blogs</a></li>
         </ul>
       </nav>
       <a href="registration.html" class="header-login">Login</a>
+      
+
+
     </header>
 
     <main>
@@ -94,9 +117,15 @@
           <div class="list-product">
             <div class="item">
               <ul class="cards-link">
-                <li><img src="images/shopping.svg"></li>
-                <li><img src="images/heart.svg"></li>
-                <li><img src="images/frame.svg"></li>
+                <li><a href="#"> <svg viewBox="0 0 20 20" width="20" height="20">
+                  <use href="images/foto-icon.svg#icon-shopping" x="0" y="0"></use>
+                </svg></a>
+                <li><a href="#"> <svg viewBox="0 0 20 20" width="20" height="20">
+                  <use href="images/foto-icon.svg#icon-heart-o" x="0" y="0"></use>
+                </svg></a>
+                <li><a href="#"> <svg viewBox="0 0 20 20" width="20" height="20">
+                  <use href="images/foto-icon.svg#icon-search" x="0" y="0"></use>
+                </svg></a>
                 
               </ul>
               <img src="images/p2.png" alt="" />
@@ -217,7 +246,7 @@
         </div>
         <div class="post_holder">
           <div class="item_holder">
-            <img src="images/16.png" />
+            <img src="images/cont16.png" />
             <div class="text_holder">
               <p class="info">September 12 I Read in 6 minutes</p>
               <h4>Cactus & Succulent Care Tips</h4>
@@ -232,7 +261,7 @@
             </div>
           </div>
           <div class="item_holder">
-            <img src="images/17.png" />
+            <img src="images/cont17.png"/>
             <div class="text_holder">
               <p class="info"> September 13 I Read in 2 minutes</p>
               <h4>Top 10 Succulents for Your Home</h4>
@@ -247,7 +276,7 @@
             </div>
           </div>
           <div class="item_holder">
-            <img src="images/18.png" />
+            <img src="images/cont18.png" />
             <div class="text_holder">
               <p class="info">September 15 I Read in 3 minutes</p>
               <h4>Cacti & Succulent Care Tips</h4>
@@ -262,7 +291,7 @@
             </div>
           </div>
           <div class="item_holder">
-            <img src="images/19.png" />
+            <img src="images/cont19.png" />
             <div class="text_holder">
               <p class="info">September 15 I Read in 2 minutes</p>
               <h4>Best Houseplants Room by Room</h4>
@@ -280,5 +309,130 @@
       </section>
     </main>
     </div>
+    <footer class="footer-section container">
+     
+        <div class="footer-top">
+          <ul class="footer-list">
+            <li>
+              <div class="footer-text">
+                <h2>Garden Care</h2>
+                <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+              </div>
+            </li>
+            <li>
+              <div class="footer-text">
+                <h2>Garden Care</h2>
+                <p>We are an online plant shop offering a wide range of cheap and trendy plants..</p>
+              </div>
+            </li>
+            <li>
+              <div class="footer-text">
+                <h2>Garden Care</h2>
+                <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+              </div>
+            </li>
+          </ul>
+    
+          <div class="footer-info">
+            <h2>Would you like to join newsletters?</h2>
+            <form class="footer-form">
+              <input type="email" placeholder="enter your email address..." class="form-email"/>
+              <button type="submit" class="form-btn">Join</button>
+            </form>
+            <p>We usually post offers and challenges in newsletter.<br>We're your online houseplant destination...</p>
+          </div>
+        </div>
+     
+    
+     
+      <div class="footer-container">
+        <div class="container footer-container-info">
+          <div class="logo"><img src="images/logo.png" alt="Logo"></div>
+          <div class="footer-item"> <svg class="footer-icon" viewBox="0 0 20 20" width="20" height="20">
+            <use href="images/icons.svg#icon-map-marker" x="0" y="0"></use>
+          </svg>
+            <a href="https://maps.google.com/?q=70+West+Buckingham+Ave,+Farmingdale,+NY+11735" target="_blank">70 West Buckingham Ave.<br> Farmingdale, NY 11735</a></div>
+          <div class="footer-item"> <svg class="footer-icon" viewBox="0 0 20 20" width="20" height="20">
+            <use href="images/icons.svg#icon-envelope-o" x="0" y="0"></use>
+          </svg>
+            <a href="mailto:contact@greenshop.com">contact@greenshop.com</a></div>
+          <div class="footer-item"> <svg class="footer-icon" viewBox="0 0 20 20" width="20" height="20">
+            <use href="images/icons.svg#icon-phone" x="0" y="0"></use>
+          </svg>
+            <a href="tel:+88 01911 717 490"> +88 01911 717 490 </a>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="footer-menu">
+        <div class="footer-menu-text">
+      <h3>My Account</h3>
+      <ul class="footer-menu-info">
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Our stores</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Specials</a></li>
+      </ul>
+      </div>
+      <div class="footer-menu-text">
+        <h3>Help & Guide</h3>
+        <ul class="footer-menu-info">
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">How to Buy</a></li>
+          <li><a href="#">Shipping & Delivery</a></li>
+          <li><a href="#">Product Policy</a></li>
+          <li><a href="#">How to Return</a></li>
+        </ul>
+        </div>
+        <div class="footer-menu-text">
+          <h3>Categories</h3>
+          <ul class="footer-menu-info">
+            <li><a href="#">House Plants</a></li>
+            <li><a href="#">Potter Plants</a></li>
+            <li><a href="#">Seeds</a></li>
+            <li><a href="#">Small Plants</a></li>
+            <li><a href="#">Accessories</a></li>
+          </ul>
+          </div>
+           
+          <div class="media">
+          <h3>Social Media</h3>
+          <ul class="footer-social">
+            <li><a href="#"> <svg class="social-icon" viewBox="0 0 20 20" width="20" height="20">
+              <use href="images/soc-icons.svg#icon-facebook" x="0" y="0"></use>
+            </svg></a> 
+            </li>
+            <li><a href="#"> <svg class="social-icon" viewBox="0 0 20 20" width="20" height="20">
+              <use href="images/soc-icons.svg#icon-instagram" x="0" y="0"></use>
+            </svg></a> 
+            </li>
+            <li><a href="#"> <svg class="social-icon" viewBox="0 0 20 20" width="20" height="20">
+              <use href="images/soc-icons.svg#icon-twitter" x="0" y="0"></use>
+            </svg></a> 
+            </li>
+            <li><a href="#"> <svg class="social-icon" viewBox="0 0 20 20" width="20" height="20">
+              <use href="images/soc-icons.svg#icon-linkedin" x="0" y="0"></use>
+            </svg></a> 
+            </li>
+            <li><a href="#"> <svg class="social-icon" viewBox="0 0 20 20" width="20" height="20">
+              <use href="images/soc-icons.svg#icon-youtube" x="0" y="0"></use>
+            </svg></a> 
+            </li>
+            
+          </ul>
+          <div class="footer-pay">
+          <h3>We accept</h3>
+          <img src="images/image16.svg">
+        </div>
+        </div>
+    </div>
+  </div>
+
+    
+      <div class="copyright">
+        <p> &copy; 2021 GreenShop. All Rights Reserved.</p>
+      </div>
+    </footer>
   </body>
-</html>
